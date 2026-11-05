@@ -163,6 +163,7 @@
             box-shadow: 0 0 25px rgba(0, 196, 204, 0.35);
         }
             #alatbox{--bg:#020617;--card:#0f172a;--tx:#e2e8f0;--mu:#94a3b8;--a:#00C4CC;--b:#7D2AE8;--ok:#16a34a;--bd:#1e293b;color:var(--tx);line-height:1.6}#alatbox ul{list-style:disc}#alatbox .tab{font-family:inherit}#alatbox *{box-sizing:border-box}#alatbox html{scroll-padding-top:env(safe-area-inset-top,0px)}#alatbox body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 "Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}#alatbox .wrap{max-width:760px;margin:0 auto;padding:20px 16px 48px}#alatbox header{display:flex;gap:12px;align-items:center;margin-bottom:14px}#alatbox .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--a),var(--b));display:grid;place-items:center;font-size:22px}#alatbox h1{font-size:1.15rem;margin:0;line-height:1.2}#alatbox header p{margin:0;color:var(--mu);font-size:.8rem}#alatbox h2{font-size:1.45rem;line-height:1.25;margin:8px 0 6px}#alatbox h3{margin:0 0 6px;font-size:1.05rem}#alatbox p{margin:0 0 10px}#alatbox .mu{color:var(--mu)}#alatbox nav{display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;}#alatbox .tab{flex:0 0 auto;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:9px 14px;border-radius:999px;font:inherit;font-size:.9rem;cursor:pointer}#alatbox .tab[aria-selected=true]{background:linear-gradient(135deg,var(--a),var(--b));border-color:transparent;color:#fff;font-weight:600}#alatbox .card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin:0 0 12px}#alatbox .opt{display:block;border:1px solid var(--bd);border-radius:10px;padding:9px 12px;margin:7px 0 0;cursor:pointer;font-size:.93rem}#alatbox .opt input{margin-right:8px;accent-color:var(--b)}#alatbox .opt:has(input:checked){border-color:var(--a);background:rgba(0,196,204,.14)}#alatbox .btn{display:inline-block;border:0;border-radius:12px;padding:12px 18px;font:inherit;font-weight:600;color:#fff;background:linear-gradient(135deg,var(--a),var(--b));cursor:pointer;text-decoration:none;text-align:center}#alatbox .btn.wa{background:var(--ok)}#alatbox .btn.ghost{background:transparent;border:1px solid var(--bd);color:var(--tx)}#alatbox input[type=text],#alatbox select{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font:inherit;margin:4px 0 10px}#alatbox :focus-visible{outline:2px solid var(--a);outline-offset:2px}#alatbox .bar{height:8px;border-radius:9px;background:var(--bd);overflow:hidden;margin:6px 0 14px}#alatbox .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--a),var(--b));transition:width .3s}#alatbox .ring{width:120px;height:120px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto}#alatbox .ring div{width:92px;height:92px;border-radius:50%;background:var(--card);display:grid;place-items:center;font-size:1.6rem;font-weight:700}#alatbox .row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}#alatbox .row>div:last-child{flex:1 1 220px}#alatbox .hook{display:flex;gap:10px;justify-content:space-between;align-items:flex-start}#alatbox .hook.lock span{filter:blur(5px);user-select:none}#alatbox .sm{padding:6px 10px;font-size:.8rem;border-radius:9px}#alatbox .lk{filter:blur(5px);user-select:none}#alatbox details{border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin:0 0 8px}#alatbox summary{cursor:pointer;font-weight:600}#alatbox ul{margin:6px 0 12px;padding-left:20px}#alatbox li{margin:3px 0}#alatbox .grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}#alatbox a.pf{display:block;color:inherit;text-decoration:none}#alatbox a.pf:hover{border-color:var(--a)}#alatbox .err{color:#f43f5e;font-size:.9rem;min-height:1.3em}#alatbox .dis{font-size:.78rem;color:var(--mu);text-align:center;margin-top:18px}@media(prefers-reduced-motion:reduce){#alatbox *{transition:none!important}}
+            section[id]{scroll-margin-top:72px}
     </style>
 </head>
 <body class="bg-slate-900 text-slate-100 antialiased selection:bg-canvaBlue selection:text-white">
@@ -177,10 +178,10 @@
                     <img src="logoTDA.jpg" alt="Logo Tim Digital Al-Ikhlas" class="w-full h-full object-cover rounded-[10px]">
                 </div>
                 <div class="flex flex-col">
-                    <span class="font-black text-xl tracking-tight text-white block leading-none font-heading">
+                    <span class="font-black text-base sm:text-xl tracking-tight text-white block leading-none font-heading">
                         TIM DIGITAL <span class="gradient-text">AL-IKHLAS</span>
                     </span>
-                    <span class="text-[10px] text-canvaBlue font-extrabold uppercase tracking-widest mt-1">
+                    <span class="hidden sm:block text-[10px] text-canvaBlue font-extrabold uppercase tracking-widest mt-1">
                         Menjungjung Tinggi Keikhlasan, Meraih Prestasi Digital
                     </span>
                 </div>
@@ -203,9 +204,20 @@
                     <a href="https://youtube.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-red-600 hover:text-white flex items-center justify-center transition-all" aria-label="YouTube Tim Digital Al-Ikhlas"><i class="fa-brands fa-youtube"></i></a>
                 </div>
 
-                <a href="https://wa.me/6281549751318?text=Halo%20Tim%20Digital%20Al-Ikhlas,%20saya%20ingin%20konsultasi%20layanan%20digital" target="_blank" rel="noopener" class="gradient-bg hover:opacity-95 text-white font-extrabold px-6 py-2.5 rounded-full text-xs uppercase tracking-wider glow-effect transition-all flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-base"></i> Hubungi WA
+                <a href="https://wa.me/6281549751318?text=Halo%20Tim%20Digital%20Al-Ikhlas,%20saya%20ingin%20konsultasi%20layanan%20digital" target="_blank" rel="noopener" class="gradient-bg hover:opacity-95 text-white font-extrabold px-3.5 sm:px-6 py-2.5 rounded-full text-xs uppercase tracking-wider glow-effect transition-all flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i><span class="hidden sm:inline">Hubungi WA</span>
                 </a>
+                <button id="menuBtn" type="button" class="md:hidden w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 flex items-center justify-center" aria-label="Buka menu" aria-expanded="false" aria-controls="mobMenu"><i class="fa-solid fa-bars" id="menuIcon"></i></button>
+            </div>
+        </div>
+        <div id="mobMenu" class="hidden md:hidden border-t border-slate-800 bg-slate-900">
+            <div class="px-4 py-3 space-y-1 text-sm">
+                <a href="#layanan" class="block px-3 py-3 rounded-xl text-slate-200 font-semibold hover:bg-slate-800">Layanan Unggulan</a>
+                <a href="#alat" class="block px-3 py-3 rounded-xl text-slate-200 font-semibold hover:bg-slate-800">Kuis &amp; Alat Gratis</a>
+                <a href="#keunggulan" class="block px-3 py-3 rounded-xl text-slate-200 font-semibold hover:bg-slate-800">Mengapa Kami</a>
+                <a href="#paket" class="block px-3 py-3 rounded-xl text-slate-200 font-semibold hover:bg-slate-800">Paket &amp; Harga</a>
+                <a href="#faq" class="block px-3 py-3 rounded-xl text-slate-200 font-semibold hover:bg-slate-800">FAQ</a>
+                <a href="https://wa.me/6281549751318?text=Halo%20Tim%20Digital%20Al-Ikhlas,%20saya%20ingin%20konsultasi%20layanan%20digital" target="_blank" rel="noopener" class="block px-3 py-3 rounded-xl bg-emerald-600 text-white font-bold text-center mt-2"><i class="fa-brands fa-whatsapp"></i> Hubungi WA</a>
             </div>
         </div>
     </header>
@@ -677,6 +689,13 @@ $('#rf').onclick=()=>{
   $('#rs').href='https://wa.me/?text='+encodeURIComponent(`Butuh website, desain Canva Pro, SEO, atau pelatihan AI? Hubungi Tim Digital Al-Ikhlas dan sebut kode referral saya: ${code}`);
 };
 })();
+</script>
+<script>
+(function(){var b=document.getElementById('menuBtn'),m=document.getElementById('mobMenu'),i=document.getElementById('menuIcon');
+function set(o){m.classList.toggle('hidden',!o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Tutup menu':'Buka menu');i.className=o?'fa-solid fa-xmark':'fa-solid fa-bars'}
+b.addEventListener('click',function(){set(m.classList.contains('hidden'))});
+m.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
+window.addEventListener('resize',function(){if(window.innerWidth>=768)set(false)});})();
 </script>
 </body>
 </html>
